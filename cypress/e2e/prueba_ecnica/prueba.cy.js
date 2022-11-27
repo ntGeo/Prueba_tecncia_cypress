@@ -3,7 +3,7 @@ describe('Prueba técnica', () => {
         cy.visit('https://www.demoblaze.com/index.html');
     });
 
-    it('Selección de categoría', () => {
+    it('Flujo de compra', () => {
         // Selecciona y agrega a carro el primer producto de la categoría telefono
         cy.contains('Phones').click()
         cy.wait(3000)
@@ -47,7 +47,6 @@ describe('Prueba técnica', () => {
         //Completa formulrario
         cy.wait(2000)
         cy.get('#name').type('Geovanni Atavales')
-        cy.wait(2000)
         cy.get('#country').type('Chile')
         cy.get('#city').type('Santiago')
         //defino número de tarjeta como constante
